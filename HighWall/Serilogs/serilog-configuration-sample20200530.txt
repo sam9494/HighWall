@@ -1,0 +1,82 @@
+2020-05-30T22:25:31.3902377+08:00 [DBG] (//) Hosting starting
+2020-05-30T22:25:31.5118930+08:00 [INF] (//) User profile is available. Using '"C:\Users\sam.chong62\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+2020-05-30T22:25:31.5185498+08:00 [DBG] (//) Reading data from file '"C:\Users\sam.chong62\AppData\Local\ASP.NET\DataProtection-Keys\key-28c01524-2da9-4240-b317-b1f2f9e53609.xml"'.
+2020-05-30T22:25:31.5426758+08:00 [DBG] (//) Reading data from file '"C:\Users\sam.chong62\AppData\Local\ASP.NET\DataProtection-Keys\key-8cf6fef8-47f0-47fb-b423-eb296e457953.xml"'.
+2020-05-30T22:25:31.5431492+08:00 [DBG] (//) Reading data from file '"C:\Users\sam.chong62\AppData\Local\ASP.NET\DataProtection-Keys\key-dc4e7d38-1028-4b34-aee1-61b1c5851678.xml"'.
+2020-05-30T22:25:31.5471903+08:00 [DBG] (//) Found key {28c01524-2da9-4240-b317-b1f2f9e53609}.
+2020-05-30T22:25:31.5496616+08:00 [DBG] (//) Found key {8cf6fef8-47f0-47fb-b423-eb296e457953}.
+2020-05-30T22:25:31.5497880+08:00 [DBG] (//) Found key {dc4e7d38-1028-4b34-aee1-61b1c5851678}.
+2020-05-30T22:25:31.5561516+08:00 [DBG] (//) Considering key {dc4e7d38-1028-4b34-aee1-61b1c5851678} with expiration date 2020-08-05 03:10:51Z as default key.
+2020-05-30T22:25:31.5625606+08:00 [DBG] (//) Forwarded activator type request from "Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Version=3.1.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60" to "Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60"
+2020-05-30T22:25:31.5645609+08:00 [DBG] (//) Decrypting secret element using Windows DPAPI.
+2020-05-30T22:25:31.5658843+08:00 [DBG] (//) Forwarded activator type request from "Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=3.1.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60" to "Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60"
+2020-05-30T22:25:31.5688580+08:00 [DBG] (//) Opening CNG algorithm '"AES"' from provider 'null' with chaining mode CBC.
+2020-05-30T22:25:31.5705293+08:00 [DBG] (//) Opening CNG algorithm '"SHA256"' from provider 'null' with HMAC.
+2020-05-30T22:25:31.5730384+08:00 [DBG] (//) Using key {dc4e7d38-1028-4b34-aee1-61b1c5851678} as the default key.
+2020-05-30T22:25:31.5733998+08:00 [DBG] (//) Key ring with default key {dc4e7d38-1028-4b34-aee1-61b1c5851678} was loaded during application startup.
+2020-05-30T22:25:31.7831946+08:00 [DBG] (//) Loaded hosting startup assembly "HighWall.Web"
+2020-05-30T22:25:31.7839083+08:00 [INF] (//) Application started. Press Ctrl+C to shut down.
+2020-05-30T22:25:31.7839934+08:00 [INF] (//) Hosting environment: "Development"
+2020-05-30T22:25:31.7840307+08:00 [INF] (//) Content root path: "C:\Users\sam.chong62\Desktop\Pratice Test\workplace\HighWall\HighWall"
+2020-05-30T22:25:31.7840729+08:00 [DBG] (//) Hosting started
+2020-05-30T22:25:31.8358156+08:00 [INF] (//) Request starting HTTP/2.0 GET https://localhost:44319/  
+2020-05-30T22:25:31.8382190+08:00 [DBG] (//) Wildcard detected, all requests with hosts will be allowed.
+2020-05-30T22:25:31.8396725+08:00 [DBG] (//) The request path "/" does not match a supported file type
+2020-05-30T22:25:31.8536891+08:00 [DBG] (//) 1 candidate(s) found for the request path '"/"'
+2020-05-30T22:25:31.8563802+08:00 [DBG] (//) Endpoint '"HighWall.Controllers.HomeController.Index (HighWall.Web)"' with route pattern '"{controller=Home}/{action=Index}/{id?}"' is valid for the request path '"/"'
+2020-05-30T22:25:31.8570479+08:00 [DBG] (//) Request matched endpoint '"HighWall.Controllers.HomeController.Index (HighWall.Web)"'
+2020-05-30T22:25:31.8584534+08:00 [INF] (//) Executing endpoint '"HighWall.Controllers.HomeController.Index (HighWall.Web)"'
+2020-05-30T22:25:31.8668810+08:00 [DBG] (//) Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexTypeModelBinderProvider"]
+2020-05-30T22:25:31.8981504+08:00 [INF] (//) Route matched with "{action = \"Index\", controller = \"Home\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult Index()" on controller "HighWall.Controllers.HomeController" ("HighWall.Web").
+2020-05-30T22:25:31.8985437+08:00 [DBG] (//) Execution plan of "authorization" filters (in the following order): ["None"]
+2020-05-30T22:25:31.8986874+08:00 [DBG] (//) Execution plan of "resource" filters (in the following order): ["Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter"]
+2020-05-30T22:25:31.8988160+08:00 [DBG] (//) Execution plan of "action" filters (in the following order): ["Microsoft.AspNetCore.Mvc.Filters.ControllerActionFilter (Order: -2147483648)", "Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)"]
+2020-05-30T22:25:31.8988861+08:00 [DBG] (//) Execution plan of "exception" filters (in the following order): ["None"]
+2020-05-30T22:25:31.8989393+08:00 [DBG] (//) Execution plan of "result" filters (in the following order): ["Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter"]
+2020-05-30T22:25:31.8996307+08:00 [DBG] (//) Executing controller factory for controller "HighWall.Controllers.HomeController" ("HighWall.Web")
+2020-05-30T22:25:31.9000842+08:00 [DBG] (//) Executed controller factory for controller "HighWall.Controllers.HomeController" ("HighWall.Web")
+2020-05-30T22:25:31.9006690+08:00 [INF] (//) This is Info log
+2020-05-30T22:25:31.9006982+08:00 [INF] (//) This is debug log
+2020-05-30T22:25:31.9007219+08:00 [ERR] (//) This is error log
+2020-05-30T22:25:35.6565704+08:00 [DBG] (//) Initializing Razor view compiler with compiled view: '"/Views/Home/Index.cshtml"'.
+2020-05-30T22:25:35.6566568+08:00 [DBG] (//) Initializing Razor view compiler with compiled view: '"/Views/Home/Privacy.cshtml"'.
+2020-05-30T22:25:35.6566835+08:00 [DBG] (//) Initializing Razor view compiler with compiled view: '"/Views/Shared/Error.cshtml"'.
+2020-05-30T22:25:35.6566996+08:00 [DBG] (//) Initializing Razor view compiler with compiled view: '"/Views/Shared/_Layout.cshtml"'.
+2020-05-30T22:25:35.6567170+08:00 [DBG] (//) Initializing Razor view compiler with compiled view: '"/Views/Shared/_ValidationScriptsPartial.cshtml"'.
+2020-05-30T22:25:35.6567321+08:00 [DBG] (//) Initializing Razor view compiler with compiled view: '"/Views/_ViewImports.cshtml"'.
+2020-05-30T22:25:35.6567542+08:00 [DBG] (//) Initializing Razor view compiler with compiled view: '"/Views/_ViewStart.cshtml"'.
+2020-05-30T22:25:35.6615041+08:00 [DBG] (//) View lookup cache miss for view '"Index"' in controller '"Home"'.
+2020-05-30T22:25:35.6671388+08:00 [INF] (//) Executing ViewResult, running view "Index".
+2020-05-30T22:25:35.6705864+08:00 [DBG] (//) The view path '"/Views/Home/Index.cshtml"' was found in 6.6046ms.
+2020-05-30T22:25:35.7382121+08:00 [DBG] (//) View lookup cache miss for view '"_Layout"' in controller '"Home"'.
+2020-05-30T22:25:35.7716786+08:00 [DBG] (//) Found the endpoints ["Route: {controller=Home}/{action=Index}/{id?}"] for address "Microsoft.AspNetCore.Routing.RouteValuesAddress"
+2020-05-30T22:25:35.7767490+08:00 [DBG] (//) Successfully processed template "{controller=Home}/{action=Index}/{id?}" for "Route: {controller=Home}/{action=Index}/{id?}" resulting in "" and ""
+2020-05-30T22:25:35.7877798+08:00 [DBG] (//) Link generation succeeded for endpoints ["Route: {controller=Home}/{action=Index}/{id?}"] with result "/"
+2020-05-30T22:25:35.7890566+08:00 [DBG] (//) Found the endpoints ["Route: {controller=Home}/{action=Index}/{id?}"] for address "Microsoft.AspNetCore.Routing.RouteValuesAddress"
+2020-05-30T22:25:35.7891657+08:00 [DBG] (//) Successfully processed template "{controller=Home}/{action=Index}/{id?}" for "Route: {controller=Home}/{action=Index}/{id?}" resulting in "" and ""
+2020-05-30T22:25:35.7892076+08:00 [DBG] (//) Link generation succeeded for endpoints ["Route: {controller=Home}/{action=Index}/{id?}"] with result "/"
+2020-05-30T22:25:35.7896463+08:00 [DBG] (//) Found the endpoints ["Route: {controller=Home}/{action=Index}/{id?}"] for address "Microsoft.AspNetCore.Routing.RouteValuesAddress"
+2020-05-30T22:25:35.7899017+08:00 [DBG] (//) Successfully processed template "{controller=Home}/{action=Index}/{id?}" for "Route: {controller=Home}/{action=Index}/{id?}" resulting in "/Home/Privacy" and ""
+2020-05-30T22:25:35.7899565+08:00 [DBG] (//) Link generation succeeded for endpoints ["Route: {controller=Home}/{action=Index}/{id?}"] with result "/Home/Privacy"
+2020-05-30T22:25:35.7903861+08:00 [DBG] (//) Found the endpoints ["Route: {controller=Home}/{action=Index}/{id?}"] for address "Microsoft.AspNetCore.Routing.RouteValuesAddress"
+2020-05-30T22:25:35.7904294+08:00 [DBG] (//) Successfully processed template "{controller=Home}/{action=Index}/{id?}" for "Route: {controller=Home}/{action=Index}/{id?}" resulting in "/Home/Privacy" and ""
+2020-05-30T22:25:35.7904594+08:00 [DBG] (//) Link generation succeeded for endpoints ["Route: {controller=Home}/{action=Index}/{id?}"] with result "/Home/Privacy"
+2020-05-30T22:25:35.8097034+08:00 [INF] (//) Executed ViewResult - view "Index" executed in 149.0849ms.
+2020-05-30T22:25:35.8100235+08:00 [INF] (//) Executed action "HighWall.Controllers.HomeController.Index (HighWall.Web)" in 3910.9904ms
+2020-05-30T22:25:35.8104407+08:00 [INF] (//) Executed endpoint '"HighWall.Controllers.HomeController.Index (HighWall.Web)"'
+2020-05-30T22:25:35.8126471+08:00 [INF] (//) Request finished in 3978.9166ms 200 text/html; charset=utf-8
+2020-05-30T22:25:35.8317132+08:00 [INF] (//) Request starting HTTP/2.0 GET https://localhost:44319/lib/jquery/dist/jquery.min.js  
+2020-05-30T22:25:35.8317743+08:00 [INF] (//) Request starting HTTP/2.0 GET https://localhost:44319/lib/bootstrap/dist/css/bootstrap.min.css  
+2020-05-30T22:25:35.8317949+08:00 [INF] (//) Request starting HTTP/2.0 GET https://localhost:44319/lib/bootstrap/dist/js/bootstrap.bundle.min.js  
+2020-05-30T22:25:35.8317133+08:00 [INF] (//) Request starting HTTP/2.0 GET https://localhost:44319/css/site.css  
+2020-05-30T22:25:35.8317132+08:00 [INF] (//) Request starting HTTP/2.0 GET https://localhost:44319/js/site.js?v=4q1jwFhaPaZgr8WAUSrux6hAuh0XDg9kPS3xIVq36I0  
+2020-05-30T22:25:35.8462871+08:00 [INF] (//) Sending file. Request path: '"/js/site.js"'. Physical path: '"C:\Users\sam.chong62\Desktop\Pratice Test\workplace\HighWall\HighWall\wwwroot\js\site.js"'
+2020-05-30T22:25:35.8462871+08:00 [INF] (//) Sending file. Request path: '"/css/site.css"'. Physical path: '"C:\Users\sam.chong62\Desktop\Pratice Test\workplace\HighWall\HighWall\wwwroot\css\site.css"'
+2020-05-30T22:25:35.8476818+08:00 [INF] (//) Request finished in 15.9691ms 200 text/css
+2020-05-30T22:25:35.8476818+08:00 [INF] (//) Request finished in 14.8823ms 200 application/javascript
+2020-05-30T22:25:35.8892809+08:00 [INF] (//) Sending file. Request path: '"/lib/bootstrap/dist/css/bootstrap.min.css"'. Physical path: '"C:\Users\sam.chong62\Desktop\Pratice Test\workplace\HighWall\HighWall\wwwroot\lib\bootstrap\dist\css\bootstrap.min.css"'
+2020-05-30T22:25:35.8892745+08:00 [INF] (//) Sending file. Request path: '"/lib/bootstrap/dist/js/bootstrap.bundle.min.js"'. Physical path: '"C:\Users\sam.chong62\Desktop\Pratice Test\workplace\HighWall\HighWall\wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.min.js"'
+2020-05-30T22:25:35.8892745+08:00 [INF] (//) Sending file. Request path: '"/lib/jquery/dist/jquery.min.js"'. Physical path: '"C:\Users\sam.chong62\Desktop\Pratice Test\workplace\HighWall\HighWall\wwwroot\lib\jquery\dist\jquery.min.js"'
+2020-05-30T22:25:35.8908156+08:00 [INF] (//) Request finished in 59.0474ms 200 text/css
+2020-05-30T22:25:35.8908161+08:00 [INF] (//) Request finished in 59.0214ms 200 application/javascript
+2020-05-30T22:25:35.8908158+08:00 [INF] (//) Request finished in 59.1572ms 200 application/javascript

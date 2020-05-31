@@ -2,12 +2,14 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using HighWall.Web.Helper;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using Serilog;
 
 namespace HighWall
 {
@@ -24,6 +26,7 @@ namespace HighWall
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllersWithViews();
+            services.RegisterDependencyInjection();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -41,8 +44,9 @@ namespace HighWall
             }
             app.UseHttpsRedirection();
             app.UseStaticFiles();
-
+            app.UseSerilogRequestLogging(); // <-- Add this line
             app.UseRouting();
+
 
             app.UseAuthorization();
 
