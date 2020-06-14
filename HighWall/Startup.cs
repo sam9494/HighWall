@@ -2,10 +2,12 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using HighWall.DB.Context;
 using HighWall.Web.Helper;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
@@ -27,6 +29,14 @@ namespace HighWall
         {
             services.AddControllersWithViews();
             services.RegisterDependencyInjection();
+
+            var connectionString = Configuration.GetConnectionString("MyDB");
+            services.AddDbContext<MyDbContext>(options =>
+            {
+                options.UseSqlServer(connectionString);
+            });
+            //services.AddOpenApiDocument(document =>
+            //    document.PostProcess = d => d.Info.Title = "Contacts API");
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
