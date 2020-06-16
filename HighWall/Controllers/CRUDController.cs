@@ -1,8 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Cryptography.X509Certificates;
 using System.Threading.Tasks;
 using HighWall.DB.Context;
+using HighWall.DB.Repository;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
@@ -12,30 +14,34 @@ namespace HighWall.Web.Controllers
     [ApiController]
     public class CRUDController : ControllerBase
     {
-        private readonly MyDbContext _myDbContext;
+        private readonly IUserRepository _userRepository;
 
-        public CRUDController(MyDbContext myDbContext)
+        public CRUDController(IUserRepository userRepository)
         {
-            _myDbContext = myDbContext;
+            _userRepository = userRepository;
         }
 
         //https://localhost:44319/api/crud/tryRead
         [HttpGet("tryRead")]
         public ActionResult TryRead()
         {
-            var myContext = _myDbContext;
+            var queryable = _userRepository.Read(x=>x.ID==1);
 
-            var queryable = myContext.User.Where(x=> x.ID == 1);
+            return new JsonResult(queryable);
+            //return new JsonResult(readById);
+        }
 
-            foreach (var user in queryable)
+        //https://localhost:44319/api/crud/tryWrite
+        [HttpGet("tryWrite")]
+        public ActionResult TryWrite()
+        {
+            var user = new User
             {
-                Console.WriteLine(user.ID);
-                Console.WriteLine(user.Name);
-            }
+                Name = "Sammm"
+            };
 
-            Console.WriteLine("HI");
-            return null;
-
+            _userRepository.Create(user);
+            return new JsonResult("ok");
         }
     }
 }
