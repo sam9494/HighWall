@@ -3,9 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29613.14
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HighWall.Web", "HighWall\HighWall.Web.csproj", "{38406D23-BDE8-49C9-A505-07E477FD96CD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HighWall.Web", "HighWall\HighWall.Web.csproj", "{38406D23-BDE8-49C9-A505-07E477FD96CD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HighWall.Core", "HighWall.Core\HighWall.Core.csproj", "{8FD5E193-CB60-4E71-8CA8-0E663217E080}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HighWall.Core", "HighWall.Core\HighWall.Core.csproj", "{8FD5E193-CB60-4E71-8CA8-0E663217E080}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HighWall.DB", "HighWall.DB\HighWall.DB.csproj", "{B7C5E6B2-E486-49B2-BF85-8648320FCC58}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{8FD5E193-CB60-4E71-8CA8-0E663217E080}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8FD5E193-CB60-4E71-8CA8-0E663217E080}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8FD5E193-CB60-4E71-8CA8-0E663217E080}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B7C5E6B2-E486-49B2-BF85-8648320FCC58}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B7C5E6B2-E486-49B2-BF85-8648320FCC58}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B7C5E6B2-E486-49B2-BF85-8648320FCC58}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B7C5E6B2-E486-49B2-BF85-8648320FCC58}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

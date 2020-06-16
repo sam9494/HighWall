@@ -12,6 +12,7 @@ namespace HighWall.Web.Helper
         public static IServiceCollection RegisterDependencyInjection(this IServiceCollection services)
         {
             services.AddScoped<ICapitalismService, CapitalismService>();
+
             return services;
         } 
     }
